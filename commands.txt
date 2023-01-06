@@ -1,0 +1,20 @@
+
+git checkout release
+
+git pull origin release
+
+// go to git and merge your branch with release branch
+
+git tag {rc-tag-name-which-is-made-in-git}
+
+git push origin {rc-tag-name-which-is-used-above}
+
+// goto Jenkins 
+
+  search "service-deploy-production"
+  
+  fill the required values tag-name, git-url etc.
+  
+  then build this
+  
+//
